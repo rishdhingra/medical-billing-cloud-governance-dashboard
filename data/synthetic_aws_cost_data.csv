@@ -1,0 +1,151 @@
+month,department,aws_service,environment,resource_id,owner,monthly_cost,tag_status,usage_level,waste_category,recommendation,estimated_savings
+2026-07,Billing Operations,RDS,dev,rds-billing-operations-dev-0,unknown,347,untagged,low,untagged,Add owner and cost-center tags,96
+2026-06,Reporting Analytics,S3,prod,s3-reporting-analytics-prod-1,reports-team,475,tagged,high,none,No action needed,0
+2026-06,Billing Operations,RDS,test,rds-billing-operations-test-2,billing-team,699,tagged,low,idle,Schedule shutdown after business hours,285
+2026-07,Claims Processing,CloudWatch,dev,cloudwatch-claims-processing-dev-3,claims-team,239,tagged,low,overprovisioned,Review sizing and downsize resource,60
+2026-06,Billing Operations,EC2,dev,ec2-billing-operations-dev-4,billing-team,765,tagged,high,idle,Schedule shutdown after business hours,185
+2026-08,Claims Processing,QuickSight,prod,quicksight-claims-processing-prod-5,claims-team,173,tagged,high,idle,Schedule shutdown after business hours,31
+2026-06,Claims Processing,Lambda,dev,lambda-claims-processing-dev-6,claims-team,61,tagged,high,overprovisioned,Review sizing and downsize resource,22
+2026-08,Claims Processing,Lambda,test,lambda-claims-processing-test-7,claims-team,19,tagged,normal,none,No action needed,0
+2026-08,Admin,Glue,prod,glue-admin-prod-8,admin-team,160,tagged,high,none,No action needed,0
+2026-08,Admin,EC2,test,ec2-admin-test-9,admin-team,341,tagged,low,log_retention,Reduce log retention for non-production environment,92
+2026-06,Admin,QuickSight,dev,quicksight-admin-dev-10,unknown,203,untagged,low,untagged,Add owner and cost-center tags,44
+2026-06,Claims Processing,CloudWatch,test,cloudwatch-claims-processing-test-11,claims-team,175,tagged,high,overprovisioned,Review sizing and downsize resource,34
+2026-06,Billing Operations,RDS,test,rds-billing-operations-test-12,billing-team,392,tagged,low,none,No action needed,0
+2026-08,Claims Processing,Lambda,dev,lambda-claims-processing-dev-13,claims-team,15,tagged,low,idle,Schedule shutdown after business hours,6
+2026-07,Admin,Glue,prod,glue-admin-prod-14,admin-team,386,tagged,normal,idle,Schedule shutdown after business hours,155
+2026-06,Claims Processing,Glue,test,glue-claims-processing-test-15,unknown,150,untagged,normal,untagged,Add owner and cost-center tags,60
+2026-06,Billing Operations,QuickSight,dev,quicksight-billing-operations-dev-16,billing-team,111,tagged,normal,overprovisioned,Review sizing and downsize resource,35
+2026-08,Claims Processing,CloudWatch,prod,cloudwatch-claims-processing-prod-17,claims-team,105,tagged,high,idle,Schedule shutdown after business hours,24
+2026-07,Reporting Analytics,Lambda,dev,lambda-reporting-analytics-dev-18,reports-team,94,tagged,low,none,No action needed,0
+2026-07,Admin,RDS,test,rds-admin-test-19,unknown,328,untagged,normal,untagged,Add owner and cost-center tags,82
+2026-08,Billing Operations,S3,test,s3-billing-operations-test-20,billing-team,262,tagged,low,overprovisioned,Review sizing and downsize resource,54
+2026-08,Admin,S3,dev,s3-admin-dev-21,admin-team,355,tagged,high,log_retention,Reduce log retention for non-production environment,110
+2026-06,Billing Operations,CloudWatch,dev,cloudwatch-billing-operations-dev-22,billing-team,49,tagged,low,storage_tier,Move older files to cheaper S3 storage class,20
+2026-08,Reporting Analytics,EC2,test,ec2-reporting-analytics-test-23,reports-team,671,tagged,high,storage_tier,Move older files to cheaper S3 storage class,292
+2026-07,Reporting Analytics,CloudWatch,dev,cloudwatch-reporting-analytics-dev-24,reports-team,30,tagged,low,storage_tier,Move older files to cheaper S3 storage class,11
+2026-06,Admin,CloudWatch,prod,cloudwatch-admin-prod-25,admin-team,160,tagged,high,idle,Schedule shutdown after business hours,42
+2026-06,Reporting Analytics,S3,dev,s3-reporting-analytics-dev-26,reports-team,73,tagged,normal,storage_tier,Move older files to cheaper S3 storage class,20
+2026-07,Billing Operations,Glue,prod,glue-billing-operations-prod-27,billing-team,551,tagged,high,idle,Schedule shutdown after business hours,178
+2026-07,Billing Operations,RDS,prod,rds-billing-operations-prod-28,billing-team,855,tagged,low,storage_tier,Move older files to cheaper S3 storage class,252
+2026-07,Admin,QuickSight,prod,quicksight-admin-prod-29,admin-team,374,tagged,low,none,No action needed,0
+2026-07,Engineering,QuickSight,prod,quicksight-engineering-prod-30,engineering-team,312,tagged,high,none,No action needed,0
+2026-08,Admin,CloudWatch,dev,cloudwatch-admin-dev-31,admin-team,167,tagged,high,storage_tier,Move older files to cheaper S3 storage class,31
+2026-06,Reporting Analytics,Lambda,test,lambda-reporting-analytics-test-32,reports-team,10,tagged,low,overprovisioned,Review sizing and downsize resource,4
+2026-07,Engineering,RDS,prod,rds-engineering-prod-33,unknown,987,untagged,low,untagged,Add owner and cost-center tags,433
+2026-08,Claims Processing,S3,prod,s3-claims-processing-prod-34,claims-team,228,tagged,normal,log_retention,Reduce log retention for non-production environment,47
+2026-07,Claims Processing,CloudWatch,prod,cloudwatch-claims-processing-prod-35,claims-team,202,tagged,normal,none,No action needed,0
+2026-08,Engineering,QuickSight,dev,quicksight-engineering-dev-36,engineering-team,244,tagged,low,storage_tier,Move older files to cheaper S3 storage class,87
+2026-07,Claims Processing,Athena,test,athena-claims-processing-test-37,claims-team,36,tagged,low,log_retention,Reduce log retention for non-production environment,11
+2026-08,Claims Processing,QuickSight,test,quicksight-claims-processing-test-38,claims-team,171,tagged,low,log_retention,Reduce log retention for non-production environment,53
+2026-08,Reporting Analytics,EC2,prod,ec2-reporting-analytics-prod-39,unknown,192,untagged,normal,untagged,Add owner and cost-center tags,37
+2026-07,Reporting Analytics,S3,dev,s3-reporting-analytics-dev-40,unknown,361,untagged,high,untagged,Add owner and cost-center tags,152
+2026-07,Engineering,S3,prod,s3-engineering-prod-41,engineering-team,324,tagged,low,log_retention,Reduce log retention for non-production environment,48
+2026-07,Billing Operations,Athena,prod,athena-billing-operations-prod-42,billing-team,144,tagged,high,storage_tier,Move older files to cheaper S3 storage class,32
+2026-08,Billing Operations,Athena,prod,athena-billing-operations-prod-43,billing-team,173,tagged,low,none,No action needed,0
+2026-06,Admin,Lambda,prod,lambda-admin-prod-44,unknown,108,untagged,low,untagged,Add owner and cost-center tags,25
+2026-08,Engineering,Glue,prod,glue-engineering-prod-45,engineering-team,69,tagged,low,log_retention,Reduce log retention for non-production environment,13
+2026-07,Engineering,Glue,dev,glue-engineering-dev-46,engineering-team,278,tagged,high,storage_tier,Move older files to cheaper S3 storage class,123
+2026-07,Admin,Athena,dev,athena-admin-dev-47,admin-team,54,tagged,high,storage_tier,Move older files to cheaper S3 storage class,11
+2026-07,Admin,Athena,prod,athena-admin-prod-48,admin-team,164,tagged,high,idle,Schedule shutdown after business hours,52
+2026-08,Claims Processing,Lambda,dev,lambda-claims-processing-dev-49,claims-team,12,tagged,normal,idle,Schedule shutdown after business hours,4
+2026-07,Admin,Athena,prod,athena-admin-prod-50,unknown,191,untagged,normal,untagged,Add owner and cost-center tags,44
+2026-07,Admin,EC2,prod,ec2-admin-prod-51,admin-team,340,tagged,low,none,No action needed,0
+2026-06,Billing Operations,S3,dev,s3-billing-operations-dev-52,unknown,219,untagged,normal,untagged,Add owner and cost-center tags,71
+2026-07,Admin,S3,test,s3-admin-test-53,admin-team,466,tagged,high,overprovisioned,Review sizing and downsize resource,152
+2026-07,Billing Operations,S3,prod,s3-billing-operations-prod-54,billing-team,477,tagged,normal,storage_tier,Move older files to cheaper S3 storage class,202
+2026-07,Billing Operations,Athena,prod,athena-billing-operations-prod-55,billing-team,145,tagged,high,storage_tier,Move older files to cheaper S3 storage class,55
+2026-07,Reporting Analytics,Athena,test,athena-reporting-analytics-test-56,unknown,67,untagged,high,untagged,Add owner and cost-center tags,17
+2026-08,Claims Processing,Lambda,prod,lambda-claims-processing-prod-57,claims-team,69,tagged,normal,log_retention,Reduce log retention for non-production environment,19
+2026-08,Admin,EC2,dev,ec2-admin-dev-58,admin-team,185,tagged,high,idle,Schedule shutdown after business hours,42
+2026-08,Engineering,Lambda,dev,lambda-engineering-dev-59,engineering-team,107,tagged,high,log_retention,Reduce log retention for non-production environment,32
+2026-07,Billing Operations,S3,test,s3-billing-operations-test-60,billing-team,120,tagged,low,none,No action needed,0
+2026-06,Admin,Athena,test,athena-admin-test-61,unknown,134,untagged,high,untagged,Add owner and cost-center tags,54
+2026-06,Reporting Analytics,RDS,prod,rds-reporting-analytics-prod-62,reports-team,426,tagged,normal,log_retention,Reduce log retention for non-production environment,68
+2026-06,Engineering,Athena,prod,athena-engineering-prod-63,unknown,77,untagged,normal,untagged,Add owner and cost-center tags,21
+2026-07,Engineering,Lambda,dev,lambda-engineering-dev-64,engineering-team,79,tagged,high,log_retention,Reduce log retention for non-production environment,14
+2026-08,Claims Processing,EC2,test,ec2-claims-processing-test-65,unknown,443,untagged,high,untagged,Add owner and cost-center tags,97
+2026-08,Claims Processing,Glue,prod,glue-claims-processing-prod-66,claims-team,423,tagged,normal,storage_tier,Move older files to cheaper S3 storage class,104
+2026-08,Engineering,Athena,dev,athena-engineering-dev-67,unknown,83,untagged,normal,untagged,Add owner and cost-center tags,18
+2026-06,Reporting Analytics,EC2,dev,ec2-reporting-analytics-dev-68,reports-team,162,tagged,normal,log_retention,Reduce log retention for non-production environment,38
+2026-07,Engineering,QuickSight,dev,quicksight-engineering-dev-69,engineering-team,326,tagged,normal,none,No action needed,0
+2026-08,Billing Operations,EC2,test,ec2-billing-operations-test-70,billing-team,329,tagged,high,idle,Schedule shutdown after business hours,112
+2026-06,Claims Processing,Lambda,dev,lambda-claims-processing-dev-71,claims-team,15,tagged,low,overprovisioned,Review sizing and downsize resource,4
+2026-06,Engineering,S3,test,s3-engineering-test-72,engineering-team,468,tagged,normal,overprovisioned,Review sizing and downsize resource,206
+2026-06,Claims Processing,QuickSight,test,quicksight-claims-processing-test-73,claims-team,194,tagged,low,overprovisioned,Review sizing and downsize resource,70
+2026-07,Reporting Analytics,QuickSight,prod,quicksight-reporting-analytics-prod-74,reports-team,227,tagged,low,storage_tier,Move older files to cheaper S3 storage class,64
+2026-06,Engineering,CloudWatch,test,cloudwatch-engineering-test-75,engineering-team,163,tagged,high,overprovisioned,Review sizing and downsize resource,65
+2026-06,Billing Operations,QuickSight,dev,quicksight-billing-operations-dev-76,billing-team,253,tagged,normal,log_retention,Reduce log retention for non-production environment,41
+2026-08,Engineering,Athena,dev,athena-engineering-dev-77,unknown,141,untagged,high,untagged,Add owner and cost-center tags,32
+2026-08,Claims Processing,QuickSight,prod,quicksight-claims-processing-prod-78,claims-team,126,tagged,high,idle,Schedule shutdown after business hours,24
+2026-08,Claims Processing,QuickSight,test,quicksight-claims-processing-test-79,claims-team,110,tagged,normal,storage_tier,Move older files to cheaper S3 storage class,17
+2026-06,Billing Operations,EC2,dev,ec2-billing-operations-dev-80,billing-team,795,tagged,normal,idle,Schedule shutdown after business hours,326
+2026-08,Claims Processing,EC2,test,ec2-claims-processing-test-81,claims-team,602,tagged,low,none,No action needed,0
+2026-07,Engineering,Athena,test,athena-engineering-test-82,engineering-team,70,tagged,low,storage_tier,Move older files to cheaper S3 storage class,12
+2026-06,Billing Operations,Athena,prod,athena-billing-operations-prod-83,unknown,32,untagged,high,untagged,Add owner and cost-center tags,4
+2026-07,Reporting Analytics,RDS,dev,rds-reporting-analytics-dev-84,reports-team,872,tagged,high,none,No action needed,0
+2026-06,Claims Processing,S3,prod,s3-claims-processing-prod-85,claims-team,216,tagged,high,idle,Schedule shutdown after business hours,62
+2026-06,Claims Processing,RDS,prod,rds-claims-processing-prod-86,claims-team,1122,tagged,normal,none,No action needed,0
+2026-07,Billing Operations,RDS,test,rds-billing-operations-test-87,billing-team,824,tagged,normal,log_retention,Reduce log retention for non-production environment,201
+2026-08,Engineering,RDS,dev,rds-engineering-dev-88,engineering-team,1025,tagged,low,storage_tier,Move older files to cheaper S3 storage class,369
+2026-08,Engineering,Glue,test,glue-engineering-test-89,engineering-team,108,tagged,low,log_retention,Reduce log retention for non-production environment,44
+2026-06,Engineering,CloudWatch,prod,cloudwatch-engineering-prod-90,engineering-team,40,tagged,high,none,No action needed,0
+2026-06,Billing Operations,Glue,test,glue-billing-operations-test-91,billing-team,196,tagged,normal,storage_tier,Move older files to cheaper S3 storage class,64
+2026-06,Claims Processing,CloudWatch,test,cloudwatch-claims-processing-test-92,unknown,99,untagged,low,untagged,Add owner and cost-center tags,35
+2026-08,Admin,S3,test,s3-admin-test-93,admin-team,486,tagged,low,none,No action needed,0
+2026-08,Reporting Analytics,S3,prod,s3-reporting-analytics-prod-94,reports-team,393,tagged,normal,storage_tier,Move older files to cheaper S3 storage class,156
+2026-06,Admin,EC2,test,ec2-admin-test-95,admin-team,583,tagged,normal,overprovisioned,Review sizing and downsize resource,109
+2026-07,Claims Processing,Lambda,prod,lambda-claims-processing-prod-96,claims-team,80,tagged,low,overprovisioned,Review sizing and downsize resource,27
+2026-07,Reporting Analytics,CloudWatch,test,cloudwatch-reporting-analytics-test-97,reports-team,30,tagged,normal,overprovisioned,Review sizing and downsize resource,6
+2026-08,Admin,QuickSight,test,quicksight-admin-test-98,admin-team,134,tagged,high,log_retention,Reduce log retention for non-production environment,32
+2026-06,Claims Processing,CloudWatch,prod,cloudwatch-claims-processing-prod-99,claims-team,249,tagged,normal,idle,Schedule shutdown after business hours,39
+2026-08,Claims Processing,QuickSight,prod,quicksight-claims-processing-prod-100,claims-team,217,tagged,high,none,No action needed,0
+2026-06,Engineering,CloudWatch,test,cloudwatch-engineering-test-101,engineering-team,111,tagged,normal,idle,Schedule shutdown after business hours,38
+2026-08,Billing Operations,S3,dev,s3-billing-operations-dev-102,billing-team,318,tagged,normal,idle,Schedule shutdown after business hours,108
+2026-07,Reporting Analytics,QuickSight,test,quicksight-reporting-analytics-test-103,reports-team,234,tagged,low,log_retention,Reduce log retention for non-production environment,53
+2026-08,Admin,QuickSight,dev,quicksight-admin-dev-104,unknown,222,untagged,high,untagged,Add owner and cost-center tags,86
+2026-07,Engineering,Athena,prod,athena-engineering-prod-105,engineering-team,96,tagged,low,storage_tier,Move older files to cheaper S3 storage class,27
+2026-06,Reporting Analytics,QuickSight,test,quicksight-reporting-analytics-test-106,reports-team,258,tagged,low,storage_tier,Move older files to cheaper S3 storage class,84
+2026-07,Engineering,RDS,prod,rds-engineering-prod-107,engineering-team,379,tagged,low,overprovisioned,Review sizing and downsize resource,162
+2026-06,Reporting Analytics,Glue,prod,glue-reporting-analytics-prod-108,reports-team,388,tagged,high,idle,Schedule shutdown after business hours,132
+2026-08,Engineering,QuickSight,dev,quicksight-engineering-dev-109,engineering-team,384,tagged,low,idle,Schedule shutdown after business hours,130
+2026-07,Billing Operations,Athena,prod,athena-billing-operations-prod-110,billing-team,108,tagged,low,storage_tier,Move older files to cheaper S3 storage class,16
+2026-07,Admin,S3,dev,s3-admin-dev-111,admin-team,427,tagged,low,storage_tier,Move older files to cheaper S3 storage class,136
+2026-06,Claims Processing,EC2,prod,ec2-claims-processing-prod-112,claims-team,184,tagged,high,storage_tier,Move older files to cheaper S3 storage class,58
+2026-07,Billing Operations,CloudWatch,test,cloudwatch-billing-operations-test-113,billing-team,95,tagged,low,overprovisioned,Review sizing and downsize resource,18
+2026-07,Billing Operations,Glue,test,glue-billing-operations-test-114,billing-team,260,tagged,low,none,No action needed,0
+2026-06,Engineering,S3,prod,s3-engineering-prod-115,unknown,58,untagged,normal,untagged,Add owner and cost-center tags,25
+2026-08,Billing Operations,RDS,prod,rds-billing-operations-prod-116,billing-team,696,tagged,normal,idle,Schedule shutdown after business hours,104
+2026-07,Reporting Analytics,CloudWatch,test,cloudwatch-reporting-analytics-test-117,reports-team,40,tagged,low,none,No action needed,0
+2026-07,Admin,Athena,prod,athena-admin-prod-118,admin-team,133,tagged,high,storage_tier,Move older files to cheaper S3 storage class,49
+2026-06,Admin,EC2,dev,ec2-admin-dev-119,admin-team,475,tagged,low,idle,Schedule shutdown after business hours,116
+2026-08,Billing Operations,RDS,prod,rds-billing-operations-prod-120,unknown,1003,untagged,high,untagged,Add owner and cost-center tags,440
+2026-06,Billing Operations,EC2,dev,ec2-billing-operations-dev-121,unknown,399,untagged,high,untagged,Add owner and cost-center tags,140
+2026-07,Admin,CloudWatch,dev,cloudwatch-admin-dev-122,admin-team,201,tagged,normal,overprovisioned,Review sizing and downsize resource,66
+2026-06,Reporting Analytics,EC2,test,ec2-reporting-analytics-test-123,reports-team,700,tagged,normal,overprovisioned,Review sizing and downsize resource,205
+2026-08,Admin,EC2,test,ec2-admin-test-124,admin-team,628,tagged,high,overprovisioned,Review sizing and downsize resource,199
+2026-06,Admin,QuickSight,dev,quicksight-admin-dev-125,admin-team,230,tagged,high,idle,Schedule shutdown after business hours,82
+2026-07,Billing Operations,QuickSight,test,quicksight-billing-operations-test-126,billing-team,291,tagged,high,overprovisioned,Review sizing and downsize resource,111
+2026-07,Reporting Analytics,CloudWatch,prod,cloudwatch-reporting-analytics-prod-127,reports-team,218,tagged,high,storage_tier,Move older files to cheaper S3 storage class,45
+2026-07,Billing Operations,CloudWatch,test,cloudwatch-billing-operations-test-128,billing-team,225,tagged,normal,none,No action needed,0
+2026-07,Reporting Analytics,Athena,prod,athena-reporting-analytics-prod-129,unknown,65,untagged,high,untagged,Add owner and cost-center tags,12
+2026-07,Billing Operations,EC2,test,ec2-billing-operations-test-130,billing-team,509,tagged,normal,overprovisioned,Review sizing and downsize resource,138
+2026-07,Claims Processing,S3,prod,s3-claims-processing-prod-131,claims-team,350,tagged,normal,storage_tier,Move older files to cheaper S3 storage class,151
+2026-06,Reporting Analytics,QuickSight,dev,quicksight-reporting-analytics-dev-132,reports-team,274,tagged,normal,log_retention,Reduce log retention for non-production environment,71
+2026-07,Engineering,EC2,test,ec2-engineering-test-133,engineering-team,720,tagged,high,idle,Schedule shutdown after business hours,110
+2026-07,Reporting Analytics,Athena,dev,athena-reporting-analytics-dev-134,reports-team,111,tagged,high,storage_tier,Move older files to cheaper S3 storage class,48
+2026-06,Admin,EC2,dev,ec2-admin-dev-135,admin-team,456,tagged,normal,storage_tier,Move older files to cheaper S3 storage class,134
+2026-06,Reporting Analytics,Glue,prod,glue-reporting-analytics-prod-136,reports-team,555,tagged,high,storage_tier,Move older files to cheaper S3 storage class,228
+2026-08,Engineering,EC2,test,ec2-engineering-test-137,engineering-team,417,tagged,low,log_retention,Reduce log retention for non-production environment,155
+2026-06,Claims Processing,Athena,prod,athena-claims-processing-prod-138,unknown,188,untagged,normal,untagged,Add owner and cost-center tags,55
+2026-08,Billing Operations,S3,test,s3-billing-operations-test-139,unknown,401,untagged,normal,untagged,Add owner and cost-center tags,83
+2026-08,Engineering,Glue,test,glue-engineering-test-140,engineering-team,548,tagged,high,storage_tier,Move older files to cheaper S3 storage class,150
+2026-07,Admin,QuickSight,dev,quicksight-admin-dev-141,admin-team,371,tagged,high,storage_tier,Move older files to cheaper S3 storage class,71
+2026-07,Claims Processing,Lambda,prod,lambda-claims-processing-prod-142,claims-team,36,tagged,high,none,No action needed,0
+2026-08,Reporting Analytics,QuickSight,prod,quicksight-reporting-analytics-prod-143,unknown,248,untagged,normal,untagged,Add owner and cost-center tags,85
+2026-06,Reporting Analytics,Athena,dev,athena-reporting-analytics-dev-144,unknown,106,untagged,high,untagged,Add owner and cost-center tags,34
+2026-06,Billing Operations,EC2,prod,ec2-billing-operations-prod-145,billing-team,820,tagged,normal,none,No action needed,0
+2026-07,Admin,S3,dev,s3-admin-dev-146,admin-team,189,tagged,low,none,No action needed,0
+2026-08,Claims Processing,CloudWatch,test,cloudwatch-claims-processing-test-147,claims-team,199,tagged,normal,none,No action needed,0
+2026-08,Reporting Analytics,QuickSight,test,quicksight-reporting-analytics-test-148,reports-team,296,tagged,low,overprovisioned,Review sizing and downsize resource,80
+2026-06,Admin,Athena,dev,athena-admin-dev-149,unknown,53,untagged,low,untagged,Add owner and cost-center tags,16

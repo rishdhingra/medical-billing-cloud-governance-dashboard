@@ -1,0 +1,41 @@
+=== MediBill EC2 Cloud Cost Summary ===
+Total monthly AWS cost: $43,265.00
+Estimated monthly savings: $10,773.00
+Untagged resources: 28
+
+=== Cost by AWS Service ===
+EC2: $10,716.00
+RDS: $9,955.00
+S3: $6,666.00
+QuickSight: $5,983.00
+Glue: $4,072.00
+CloudWatch: $2,797.00
+Athena: $2,371.00
+Lambda: $705.00
+
+=== Cost by Department ===
+Billing Operations: $12,863.00
+Admin: $8,704.00
+Engineering: $7,614.00
+Reporting Analytics: $7,576.00
+Claims Processing: $6,508.00
+
+=== Savings by Waste Category ===
+storage_tier: $3,119.00
+idle: $2,387.00
+untagged: $2,298.00
+overprovisioned: $1,827.00
+log_retention: $1,142.00
+none: $0.00
+
+=== Top 10 Savings Opportunities ===
+rds-billing-operations-prod-120 | Billing Operations | RDS | prod | untagged | Save $440.00 | Add owner and cost-center tags
+rds-engineering-prod-33 | Engineering | RDS | prod | untagged | Save $433.00 | Add owner and cost-center tags
+rds-engineering-dev-88 | Engineering | RDS | dev | storage_tier | Save $369.00 | Move older files to cheaper S3 storage class
+ec2-billing-operations-dev-80 | Billing Operations | EC2 | dev | idle | Save $326.00 | Schedule shutdown after business hours
+ec2-reporting-analytics-test-23 | Reporting Analytics | EC2 | test | storage_tier | Save $292.00 | Move older files to cheaper S3 storage class
+rds-billing-operations-test-2 | Billing Operations | RDS | test | idle | Save $285.00 | Schedule shutdown after business hours
+rds-billing-operations-prod-28 | Billing Operations | RDS | prod | storage_tier | Save $252.00 | Move older files to cheaper S3 storage class
+glue-reporting-analytics-prod-136 | Reporting Analytics | Glue | prod | storage_tier | Save $228.00 | Move older files to cheaper S3 storage class
+s3-engineering-test-72 | Engineering | S3 | test | overprovisioned | Save $206.00 | Review sizing and downsize resource
+ec2-reporting-analytics-test-123 | Reporting Analytics | EC2 | test | overprovisioned | Save $205.00 | Review sizing and downsize resource

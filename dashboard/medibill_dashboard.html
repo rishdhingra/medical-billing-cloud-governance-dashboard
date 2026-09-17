@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MediBill Cloud Cost & Governance Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background: #f6f7f9;
+            color: #1f2937;
+        }
+
+        header {
+            background: white;
+            padding: 28px;
+            border-radius: 14px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #6b7280;
+            font-size: 16px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .card {
+            background: white;
+            padding: 22px;
+            border-radius: 14px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .card-title {
+            color: #6b7280;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .card-value {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        section {
+            background: white;
+            padding: 24px;
+            border-radius: 14px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .bar-row {
+            display: grid;
+            grid-template-columns: 220px 1fr 120px;
+            gap: 14px;
+            align-items: center;
+            margin: 12px 0;
+        }
+
+        .bar-label {
+            font-weight: 600;
+        }
+
+        .bar-container {
+            background: #e5e7eb;
+            height: 22px;
+            border-radius: 999px;
+            overflow: hidden;
+        }
+
+        .bar {
+            height: 100%;
+            background: #2563eb;
+            border-radius: 999px;
+        }
+
+        .bar-value {
+            text-align: right;
+            font-weight: 600;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #e5e7eb;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #f3f4f6;
+        }
+
+        footer {
+            color: #6b7280;
+            font-size: 13px;
+            margin-top: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>MediBill Cloud Cost & Governance Dashboard</h1>
+    <div class="subtitle">
+        Stakeholder-facing dashboard built from Athena query results for a simulated medical billing cloud environment.
+    </div>
+</header>
+
+<div class="cards">
+    <div class="card">
+        <div class="card-title">Total Monthly Cloud Cost</div>
+        <div class="card-value">$43,265.00</div>
+    </div>
+
+    <div class="card">
+        <div class="card-title">Top 10 Estimated Savings</div>
+        <div class="card-value">$3,036.00</div>
+    </div>
+
+    <div class="card">
+        <div class="card-title">Untagged Resources Found</div>
+        <div class="card-value">28</div>
+    </div>
+</div>
+
+<section><h2>Monthly Cost by AWS Service</h2>
+        <div class="bar-row">
+            <div class="bar-label">EC2</div>
+            <div class="bar-container">
+                <div class="bar" style="width:100.0%"></div>
+            </div>
+            <div class="bar-value">$10,716.00</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">RDS</div>
+            <div class="bar-container">
+                <div class="bar" style="width:92.9%"></div>
+            </div>
+            <div class="bar-value">$9,955.00</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">S3</div>
+            <div class="bar-container">
+                <div class="bar" style="width:62.2%"></div>
+            </div>
+            <div class="bar-value">$6,666.00</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">QuickSight</div>
+            <div class="bar-container">
+                <div class="bar" style="width:55.8%"></div>
+            </div>
+            <div class="bar-value">$5,983.00</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">Glue</div>
+            <div class="bar-container">
+                <div class="bar" style="width:38.0%"></div>
+            </div>
+            <div class="bar-value">$4,072.00</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">CloudWatch</div>
+            <div class="bar-container">
+                <div class="bar" style="width:26.1%"></div>
+            </div>
+            <div class="bar-value">$2,797.00</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">Athena</div>
+            <div class="bar-container">
+                <div class="bar" style="width:22.1%"></div>
+            </div>
+            <div class="bar-value">$2,371.00</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">Lambda</div>
+            <div class="bar-container">
+                <div class="bar" style="width:6.6%"></div>
+            </div>
+            <div class="bar-value">$705.00</div>
+        </div>
+        </section>
+<section><h2>Monthly Cost by Department</h2>
+        <div class="bar-row">
+            <div class="bar-label">Billing Operations</div>
+            <div class="bar-container">
+                <div class="bar" style="width:100.0%"></div>
+            </div>
+            <div class="bar-value">$12,863.00</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">Admin</div>
+            <div class="bar-container">
+                <div class="bar" style="width:67.7%"></div>
+            </div>
+            <div class="bar-value">$8,704.00</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">Engineering</div>
+            <div class="bar-container">
+                <div class="bar" style="width:59.2%"></div>
+            </div>
+            <div class="bar-value">$7,614.00</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">Reporting Analytics</div>
+            <div class="bar-container">
+                <div class="bar" style="width:58.9%"></div>
+            </div>
+            <div class="bar-value">$7,576.00</div>
+        </div>
+        
+        <div class="bar-row">
+            <div class="bar-label">Claims Processing</div>
+            <div class="bar-container">
+                <div class="bar" style="width:50.6%"></div>
+            </div>
+            <div class="bar-value">$6,508.00</div>
+        </div>
+        </section>
+
+<section><h2>Untagged Resources</h2><table><thead><tr><th>Department</th><th>Aws Service</th><th>Environment</th><th>Untagged Resource Count</th></tr></thead><tbody><tr><td>Admin</td><td>QuickSight</td><td>dev</td><td>2</td></tr><tr><td>Engineering</td><td>Athena</td><td>dev</td><td>2</td></tr><tr><td>Admin</td><td>Athena</td><td>prod</td><td>1</td></tr><tr><td>Admin</td><td>Athena</td><td>test</td><td>1</td></tr><tr><td>Reporting Analytics</td><td>Athena</td><td>test</td><td>1</td></tr><tr><td>Billing Operations</td><td>S3</td><td>test</td><td>1</td></tr><tr><td>Claims Processing</td><td>EC2</td><td>test</td><td>1</td></tr><tr><td>Admin</td><td>RDS</td><td>test</td><td>1</td></tr><tr><td>Billing Operations</td><td>RDS</td><td>prod</td><td>1</td></tr><tr><td>Reporting Analytics</td><td>EC2</td><td>prod</td><td>1</td></tr><tr><td>Billing Operations</td><td>EC2</td><td>dev</td><td>1</td></tr><tr><td>Reporting Analytics</td><td>S3</td><td>dev</td><td>1</td></tr><tr><td>Claims Processing</td><td>Athena</td><td>prod</td><td>1</td></tr><tr><td>Billing Operations</td><td>S3</td><td>dev</td><td>1</td></tr><tr><td>Billing Operations</td><td>RDS</td><td>dev</td><td>1</td></tr><tr><td>Billing Operations</td><td>Athena</td><td>prod</td><td>1</td></tr><tr><td>Engineering</td><td>RDS</td><td>prod</td><td>1</td></tr><tr><td>Claims Processing</td><td>CloudWatch</td><td>test</td><td>1</td></tr><tr><td>Admin</td><td>Lambda</td><td>prod</td><td>1</td></tr><tr><td>Reporting Analytics</td><td>Athena</td><td>prod</td><td>1</td></tr><tr><td>Engineering</td><td>Athena</td><td>prod</td><td>1</td></tr><tr><td>Reporting Analytics</td><td>QuickSight</td><td>prod</td><td>1</td></tr><tr><td>Engineering</td><td>S3</td><td>prod</td><td>1</td></tr><tr><td>Reporting Analytics</td><td>Athena</td><td>dev</td><td>1</td></tr><tr><td>Claims Processing</td><td>Glue</td><td>test</td><td>1</td></tr><tr><td>Admin</td><td>Athena</td><td>dev</td><td>1</td></tr></tbody></table></section>
+
+<section><h2>Top 10 Savings Opportunities</h2><table><thead><tr><th>Resource Id</th><th>Department</th><th>Aws Service</th><th>Environment</th><th>Waste Category</th><th>Recommendation</th><th>Estimated Savings</th></tr></thead><tbody><tr><td>rds-billing-operations-prod-120</td><td>Billing Operations</td><td>RDS</td><td>prod</td><td>untagged</td><td>Add owner and cost-center tags</td><td>$440.00</td></tr><tr><td>rds-engineering-prod-33</td><td>Engineering</td><td>RDS</td><td>prod</td><td>untagged</td><td>Add owner and cost-center tags</td><td>$433.00</td></tr><tr><td>rds-engineering-dev-88</td><td>Engineering</td><td>RDS</td><td>dev</td><td>storage_tier</td><td>Move older files to cheaper S3 storage class</td><td>$369.00</td></tr><tr><td>ec2-billing-operations-dev-80</td><td>Billing Operations</td><td>EC2</td><td>dev</td><td>idle</td><td>Schedule shutdown after business hours</td><td>$326.00</td></tr><tr><td>ec2-reporting-analytics-test-23</td><td>Reporting Analytics</td><td>EC2</td><td>test</td><td>storage_tier</td><td>Move older files to cheaper S3 storage class</td><td>$292.00</td></tr><tr><td>rds-billing-operations-test-2</td><td>Billing Operations</td><td>RDS</td><td>test</td><td>idle</td><td>Schedule shutdown after business hours</td><td>$285.00</td></tr><tr><td>rds-billing-operations-prod-28</td><td>Billing Operations</td><td>RDS</td><td>prod</td><td>storage_tier</td><td>Move older files to cheaper S3 storage class</td><td>$252.00</td></tr><tr><td>glue-reporting-analytics-prod-136</td><td>Reporting Analytics</td><td>Glue</td><td>prod</td><td>storage_tier</td><td>Move older files to cheaper S3 storage class</td><td>$228.00</td></tr><tr><td>s3-engineering-test-72</td><td>Engineering</td><td>S3</td><td>test</td><td>overprovisioned</td><td>Review sizing and downsize resource</td><td>$206.00</td></tr><tr><td>ec2-reporting-analytics-test-123</td><td>Reporting Analytics</td><td>EC2</td><td>test</td><td>overprovisioned</td><td>Review sizing and downsize resource</td><td>$205.00</td></tr></tbody></table></section>
+
+<footer>
+    Data source: Athena result CSVs generated from AWS S3 data cataloged by AWS Glue.
+</footer>
+
+</body>
+</html>
